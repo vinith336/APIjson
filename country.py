@@ -25,7 +25,7 @@ countries = response.json()
 
 selected_country = None
 for country in countries:
-    if country['name']['common'].lower() == args.name:
+    if country['name']['common'].lower() == args.name.lower():
         selected_country = country
         break
 
